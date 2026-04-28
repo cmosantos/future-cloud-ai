@@ -32,10 +32,14 @@ export const Route = createRootRoute({
       { title: "Claudio Santos — IT Support Analyst | Cloud & AI Enthusiast" },
       { name: "description", content: "Portfolio of Claudio Santos — IT Support Analyst transitioning into Cloud & AI Engineering. Building AI agents, RAG apps, and cloud automation." },
       { name: "author", content: "Claudio Santos" },
-      { property: "og:title", content: "Claudio Santos — Cloud & AI Portfolio" },
-      { property: "og:description", content: "IT Support Analyst building AI agents and cloud solutions on Azure & AWS." },
+      { property: "og:title", content: "Claudio Santos — IT Support Analyst | Cloud & AI Enthusiast" },
+      { property: "og:description", content: "Portfolio of Claudio Santos — IT Support Analyst transitioning into Cloud & AI Engineering. Building AI agents, RAG apps, and cloud automation." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Claudio Santos — IT Support Analyst | Cloud & AI Enthusiast" },
+      { name: "twitter:description", content: "Portfolio of Claudio Santos — IT Support Analyst transitioning into Cloud & AI Engineering. Building AI agents, RAG apps, and cloud automation." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3146aafe-4adf-4ec6-b777-f5cef7130029" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3146aafe-4adf-4ec6-b777-f5cef7130029" },
     ],
     links: [
       {
