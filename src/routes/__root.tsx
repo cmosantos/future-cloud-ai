@@ -29,14 +29,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Claudio Santos — IT Support Analyst | Cloud & AI Enthusiast" },
+      { name: "description", content: "Portfolio of Claudio Santos — IT Support Analyst transitioning into Cloud & AI Engineering. Building AI agents, RAG apps, and cloud automation." },
+      { name: "author", content: "Claudio Santos" },
+      { property: "og:title", content: "Claudio Santos — Cloud & AI Portfolio" },
+      { property: "og:description", content: "IT Support Analyst building AI agents and cloud solutions on Azure & AWS." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -52,7 +51,7 @@ export const Route = createRootRoute({
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <HeadContent />
       </head>
