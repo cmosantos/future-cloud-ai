@@ -61,6 +61,14 @@ const projects = [
       "Hands-on lab integrating Active Directory with Entra ID and AWS IAM — exploring SSO, federation and least-privilege design.",
     tech: ["Entra ID", "AWS IAM", "AD DS", "SAML / OIDC"],
   },
+  {
+    icon: Workflow,
+    title: "AI Rapid Triage Agent",
+    description:
+      "AI agent built with n8n to automate IT helpdesk triage, classify support requests, evaluate priority and security risk, register tickets in Google Sheets, and send Gmail notifications.",
+    tech: ["n8n", "OpenAI", "Google Sheets", "Gmail", "JavaScript", "AI Agent", "Workflow Automation"],
+    href: "https://github.com/cmosantos/ai-rapid-triage-agent-n8n",
+  },
 ];
 
 function Index() {
