@@ -45,6 +45,7 @@ const projects = [
     description:
       "A Python-based Retrieval-Augmented Generation application that uses Azure OpenAI to generate embeddings and grounded answers, while Azure AI Search stores document chunks and performs vector-based retrieval. The project demonstrates how private documents can be used as trusted context before generating LLM responses.",
     tech: ["Azure AI Search", "Azure OpenAI", "Embeddings", "Vector Search", "Semantic Ranking", "Python"],
+    href: "https://github.com/cmosantos/rag-application-azure-ai-search",
   },
   {
     icon: Workflow,
@@ -266,7 +267,9 @@ function Projects() {
                   <p.icon className="h-5 w-5 text-primary-foreground" />
                 </div>
                 <a
-                  href="#"
+                  href={p.href ?? "#"}
+                  target={p.href ? "_blank" : undefined}
+                  rel={p.href ? "noopener noreferrer" : undefined}
                   aria-label={`GitHub repo for ${p.title}`}
                   className="text-muted-foreground hover:text-foreground transition-smooth"
                 >
@@ -288,7 +291,9 @@ function Projects() {
                 ))}
               </div>
               <a
-                href="#"
+                href={p.href ?? "#"}
+                target={p.href ? "_blank" : undefined}
+                rel={p.href ? "noopener noreferrer" : undefined}
                 className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-2.5 transition-all"
               >
                 View on GitHub <ExternalLink className="h-3.5 w-3.5" />
