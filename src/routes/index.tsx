@@ -43,8 +43,8 @@ const projects = [
     icon: Database,
     title: "RAG Application with Azure AI Search",
     description:
-      "Retrieval-Augmented Generation app that grounds LLM answers in private documents using vector search and semantic ranking.",
-    tech: ["Azure AI Search", "Azure OpenAI", "Embeddings", "Python"],
+      "A Python-based Retrieval-Augmented Generation application that uses Azure OpenAI to generate embeddings and grounded answers, while Azure AI Search stores document chunks and performs vector-based retrieval. The project demonstrates how private documents can be used as trusted context before generating LLM responses.",
+    tech: ["Azure AI Search", "Azure OpenAI", "Embeddings", "Vector Search", "Semantic Ranking", "Python"],
   },
   {
     icon: Workflow,
