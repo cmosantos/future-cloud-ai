@@ -352,30 +352,30 @@ function Experience() {
 
 function Contact() {
   const items = [
-    { icon: Mail, label: "Email", value: "claudio@example.com", href: "mailto:claudio@example.com" },
-    { icon: Linkedin, label: "LinkedIn", value: "/in/claudiosantos", href: "#" },
-    { icon: Github, label: "GitHub", value: "@claudiosantos", href: "#" },
+    { icon: Mail, label: "Email me", href: "mailto:cmosantos@gmail.com", external: false },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/claudio--santos/", external: true },
+    { icon: Github, label: "GitHub", href: "https://github.com/cmosantos", external: true },
   ];
   return (
     <section id="contact" className="py-24 px-6">
       <div className="max-w-4xl mx-auto text-center">
-        <SectionHeader eyebrow="Contact" title="Let's build something" />
-        <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
-          Open to Cloud & AI roles, collaborations and interesting conversations.
-          The fastest way to reach me is below.
+        <div className="text-sm font-semibold text-primary uppercase tracking-wider">Contact</div>
+        <h2 className="mt-2 text-3xl md:text-4xl font-bold tracking-tight">Let's build something</h2>
+        <p className="mt-4 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          I am open to Cloud & AI roles, collaborations, technical projects, and meaningful
+          conversations about automation, cloud computing, AI agents, and modern support operations.
         </p>
-        <div className="mt-10 grid sm:grid-cols-3 gap-4">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           {items.map((i) => (
             <a
               key={i.label}
               href={i.href}
-              className="group p-6 rounded-2xl border border-border bg-card/60 backdrop-blur hover:border-primary/50 transition-smooth shadow-card hover:-translate-y-1"
+              target={i.external ? "_blank" : undefined}
+              rel={i.external ? "noopener noreferrer" : undefined}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-border bg-card/60 backdrop-blur text-foreground font-medium hover:border-primary/50 hover:-translate-y-0.5 transition-smooth shadow-card"
             >
-              <div className="h-11 w-11 mx-auto rounded-xl bg-gradient-brand grid place-items-center shadow-glow">
-                <i.icon className="h-5 w-5 text-primary-foreground" />
-              </div>
-              <div className="mt-4 text-sm font-semibold">{i.label}</div>
-              <div className="mt-1 text-sm text-muted-foreground break-all">{i.value}</div>
+              <i.icon className="h-4 w-4 text-primary" />
+              {i.label}
             </a>
           ))}
         </div>
