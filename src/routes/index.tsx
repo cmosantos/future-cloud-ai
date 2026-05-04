@@ -3,6 +3,7 @@ import {
   Cloud, Sparkles, Shield, Workflow, Github, Linkedin, Mail,
   ArrowRight, Bot, Database, Code2, Server, Cpu, Wrench, ExternalLink,
 } from "lucide-react";
+import logoUrl from "@/assets/cloud-ai-ascent-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -95,6 +96,7 @@ function Nav() {
     { href: "#contact", label: "Contact" },
   ];
   return (
+    <>
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 font-semibold">
@@ -120,6 +122,14 @@ function Nav() {
         </a>
       </nav>
     </header>
+    <img
+      src={logoUrl}
+      alt="Cloud AI Ascent logo"
+      width={150}
+      height={150}
+      className="fixed top-4 right-4 md:top-6 md:right-6 z-[60] w-[100px] md:w-[150px] h-auto object-contain pointer-events-none drop-shadow-[0_0_20px_rgba(99,102,241,0.35)]"
+    />
+    </>
   );
 }
 
