@@ -100,8 +100,12 @@ function Nav() {
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 font-semibold">
-          <span className="h-8 w-8 rounded-lg bg-gradient-brand grid place-items-center shadow-glow">
-            <Code2 className="h-4 w-4 text-primary-foreground" />
+          <span className="h-8 w-8 md:h-9 md:w-9 rounded-lg bg-background border border-border grid place-items-center overflow-hidden shadow-glow shrink-0">
+            <img
+              src={logoUrl}
+              alt="Cloud AI Ascent logo"
+              className="h-full w-full object-contain"
+            />
           </span>
           <span className="text-gradient">Claudio Santos</span>
         </a>
@@ -122,13 +126,6 @@ function Nav() {
         </a>
       </nav>
     </header>
-    <img
-      src={logoUrl}
-      alt="Cloud AI Ascent logo"
-      width={150}
-      height={150}
-      className="fixed top-4 right-4 md:top-6 md:right-6 z-[60] w-[100px] md:w-[150px] h-auto object-contain pointer-events-none drop-shadow-[0_0_20px_rgba(99,102,241,0.35)]"
-    />
     </>
   );
 }
