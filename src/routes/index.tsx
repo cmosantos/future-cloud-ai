@@ -37,8 +37,9 @@ const projects = [
     icon: Bot,
     title: "AI Agent for Article Generation",
     description:
-      "Autonomous agent that researches topics and produces structured articles, leveraging tool-use and prompt orchestration.",
-    tech: ["Azure OpenAI", "Python", "LangChain", "APIs"],
+      "Autonomous AI agent built with Python, LangChain, Azure OpenAI, FastAPI, APIs, and n8n integration to generate structured technical articles from a user-provided topic. The agent produces a complete content package including article title, subtitle, summary, SEO description, keywords, Hashnode tags, full article draft, LinkedIn post, research notes, and draft status.",
+    tech: ["Azure OpenAI", "Python", "LangChain", "FastAPI", "APIs", "n8n"],
+    href: "https://github.com/cmosantos/ai-agent-article-generation",
   },
   {
     icon: Database,
