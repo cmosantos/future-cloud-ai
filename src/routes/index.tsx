@@ -3,6 +3,7 @@ import {
   Cloud, Sparkles, Shield, Workflow, Github, Linkedin, Mail,
   ArrowRight, Bot, Database, Code2, Server, Cpu, Wrench, ExternalLink,
 } from "lucide-react";
+import logoUrl from "@/assets/cloud-ai-ascent-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -118,6 +119,11 @@ function Nav() {
         >
           Hire me <ArrowRight className="h-4 w-4" />
         </a>
+        <img
+          src={logoUrl}
+          alt="Cloud AI Ascent logo"
+          className="ml-3 h-auto w-[100px] md:w-[150px] object-contain shrink-0"
+        />
       </nav>
     </header>
   );
