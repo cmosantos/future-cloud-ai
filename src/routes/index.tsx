@@ -119,15 +119,16 @@ function Nav() {
         >
           Hire me <ArrowRight className="h-4 w-4" />
         </a>
-        <img
-          src={logoUrl}
-          alt="Cloud AI Ascent logo"
-          width={150}
-          height={150}
-          className="ml-3 h-12 md:h-14 w-auto object-contain shrink-0"
-        />
       </nav>
     </header>
+    <img
+      src={logoUrl}
+      alt="Cloud AI Ascent logo"
+      width={150}
+      height={150}
+      className="fixed top-4 right-4 md:top-6 md:right-6 z-[60] w-[100px] md:w-[150px] h-auto object-contain pointer-events-none drop-shadow-[0_0_20px_rgba(99,102,241,0.35)]"
+    />
+    </>
   );
 }
 
