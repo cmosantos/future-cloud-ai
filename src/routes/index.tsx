@@ -122,7 +122,9 @@ function Nav() {
         <img
           src={logoUrl}
           alt="Cloud AI Ascent logo"
-          className="ml-3 h-auto w-[100px] md:w-[150px] object-contain shrink-0"
+          width={150}
+          height={150}
+          className="ml-3 h-12 md:h-14 w-auto object-contain shrink-0"
         />
       </nav>
     </header>
