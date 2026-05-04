@@ -108,7 +108,7 @@ function Nav() {
               className="h-full w-full object-contain"
             />
           </span>
-          <span className="text-gradient">Claudio Santos</span>
+          <span className="text-gradient">Cláudio Santos</span>
         </a>
         <ul className="hidden md:flex items-center gap-7 text-sm text-muted-foreground">
           {links.map((l) => (
@@ -142,7 +142,7 @@ function Hero() {
           Available for Cloud & AI opportunities
         </span>
         <h1 className="mt-6 text-5xl md:text-7xl font-bold tracking-tight">
-          <span className="text-foreground">Claudio </span>
+          <span className="text-foreground">Cláudio </span>
           <span className="text-gradient">Santos</span>
         </h1>
         <p className="mt-5 text-lg md:text-xl text-muted-foreground font-medium">
@@ -408,7 +408,7 @@ function Footer() {
           <span className="h-6 w-6 rounded-md bg-gradient-brand grid place-items-center">
             <Code2 className="h-3 w-3 text-primary-foreground" />
           </span>
-          <span>© {new Date().getFullYear()} Claudio Santos</span>
+          <span>© {new Date().getFullYear()} Cláudio Santos</span>
         </div>
         <div>Built with React, TanStack Start & Tailwind CSS.</div>
       </div>
