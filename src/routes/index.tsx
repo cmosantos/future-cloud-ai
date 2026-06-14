@@ -571,7 +571,7 @@ function About({ language }: { language: Language }) {
 
   return (
     <section id="about" className="py-24 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         <SectionHeader eyebrow={t.eyebrow} title={t.title} />
         <div className="space-y-5 text-muted-foreground leading-relaxed">
           {t.paragraphs.map((paragraph) => (
