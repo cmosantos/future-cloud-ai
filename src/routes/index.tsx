@@ -27,6 +27,26 @@ import logoUrl from "@/assets/cloud-ai-ascent-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Cláudio Santos",
+          jobTitle: "Analista de Suporte Júnior",
+          description:
+            "Analista de Suporte Júnior com experiência em Microsoft 365, Workplace, identidade, monitoramento, cloud e automação com IA.",
+          url: "https://future-cloud-ai.lovable.app",
+          sameAs: [
+            "https://github.com/claudio-ss",
+            "https://www.linkedin.com/in/claudio-santos",
+          ],
+        }),
+      },
+    ],
+  }),
 });
 
 type Language = "pt" | "en";
@@ -519,6 +539,7 @@ function Hero({ language }: { language: Language }) {
         <h1 className="mt-6 text-5xl md:text-7xl font-bold tracking-tight">
           <span className="text-foreground">Cláudio </span>
           <span className="text-gradient">Santos</span>
+          <span className="sr-only"> — Analista de Suporte Júnior | Microsoft 365 | Cloud e IA</span>
         </h1>
         <p className="mt-5 text-lg md:text-xl text-muted-foreground font-medium">{t.role}</p>
         <p className="mt-6 max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed">{t.description}</p>
